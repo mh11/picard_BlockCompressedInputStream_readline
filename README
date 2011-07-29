@@ -1,0 +1,4 @@
+Simple test package to test the speed + correctness of the 
+BlockCompressedInputStream readLine implementation.
+
+Required: picard jar file.
