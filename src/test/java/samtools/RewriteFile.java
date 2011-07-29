@@ -24,8 +24,8 @@ public class RewriteFile {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		BufferedReader in = new BufferedReader(new FileReader("/scratch/test/box/Tabix-test/input1.txt"));
-		BufferedWriter out = new BufferedWriter(new FileWriter("/scratch/test/box/Tabix-test/input1r.txt"));
+		BufferedReader in = new BufferedReader(new FileReader(args[0]));
+		BufferedWriter out = new BufferedWriter(new FileWriter(args[1]));
 		String s = null;
 		while((s = in.readLine()) != null){
 			out.write(s+"\r");
